@@ -1,1 +1,1 @@
-# couchdb-operator
+Work in progress
