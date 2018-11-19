@@ -1,0 +1,7 @@
+apiVersion: cache.example.com/v1alpha1
+kind: Couchdb
+metadata:
+  name: example-couchdb
+spec:
+  # Add fields here
+  size: 3
