@@ -187,6 +187,15 @@ func (r *ReconcileCouchdb) deploymentForCouchdb(m *cachev1alpha1.Couchdb) *appsv
 							ContainerPort: 5984,
 							Name:          "couchdb",
 						}},
+                                                Env: []corev1.EnvVar{{
+                                                        Name: "COUCHDB_USER",
+                                                        Value: "admin",
+                                                    },
+                                                    {
+                                                        Name: "COUCHDB_PASSWORD",
+                                                        Value: "couch_pass",      
+                                                    },
+                                               },
 					}},
 				},
 			},
